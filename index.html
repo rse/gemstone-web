@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-framework="componentjs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gemstone - Gemstones for JavaScript</title>
+        <script src="lib/lodash/lodash.js" type="text/javascript"></script>
+        <script src="lib/nunjucks/nunjucks.js" type="text/javascript"></script>
+        <script src="lib/jquery/jquery.js" type="text/javascript"></script>
+        <script src="lib/jquery-markup/jquery.markup.js" type="text/javascript"></script>
+        <script src="lib/director/director.js" type="text/javascript"></script>
+        <script src="lib/swiper/idangerous.swiper.js" type="text/javascript"></script>
+        <script src="lib/swiper/idangerous.swiper.scrollbar.js" type="text/javascript"></script>
+        <script src="lib/swiper/idangerous.swiper.progress.js" type="text/javascript"></script>
+        <script src="lib/swiper/idangerous.swiper.hashnav.js" type="text/javascript"></script>
+        <script src="lib/highlight/highlight.js" type="text/javascript"></script>
+        <link href="lib/sanitize/sanitize.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/typopro/TypoPRO-OpenSans/TypoPRO-OpenSans.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/typopro/TypoPRO-DejaVu/TypoPRO-DejaVu.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/typopro/TypoPRO-YanoneKaffeesatz/TypoPRO-YanoneKaffeesatz.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/typopro/TypoPRO-Journal/TypoPRO-Journal.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/typopro/TypoPRO-TopSecret/TypoPRO-TopSecret.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/font-awesome/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/swiper/idangerous.swiper.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/gridless/eg12.css" rel="stylesheet" type="text/css"/>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+        <script src="index.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <a href="http://github.com/rse/gemstone-web" class="forkme" style="position: absolute; top: 0; right: 0; border: 0; display: block; z-index: 300;">
+            <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+        </a>
+        <div class="tag2">{STILL UNDER DEVELOPMENT}</div>
+        <div class="canvas">
+            <div class="g-row">
+                <div class="g-col-1-2" style="height: 300px;">
+                    <div class="banner"></div>
+                    <div class="title">Gemstone</div>
+                    <div class="tag">Best of Breed for JavaScript<br/>Single-Page-Apps...</div>
+                </div>
+                <div class="g-col-1-2" style="height: 300px;">
+                    <div class="pitch">
+                        Gemstone is a build-time framework for scaffolding and
+                        building JavaScript Single-Page-Apps (SPA). In a Best-of-Breed
+                        approach, it leverages the main build-tools <i>Yo</i>, <i>Bower</i>, <i>Grunt</i>, <i>Traceur</i> and <i>LESS</i>
+                        and the main run-time components <i>ComponentJS</i>, <i>jQuery</i> and <i>RactiveJS</i>.
+                    </div>
+                </div>
+            </div>
+            <div class="g-row">
+                <div class="g-col-2-2">
+
+                    <div class="swiper-container" style="height: 800px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1" data-hash="example-validate"> 
+
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-10-12">
+                                        <b>Step 1: Initial Project Setup</b>
+                                    </div>
+                                </div>
+                                <p/>
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-6-12">
+<div class="sample"><pre class="highlight language-bash">
+$ npm install gemstone
+$ mkdir example
+$ cd example
+$ yo gemstone
+$ vi gemstone.yaml
+</pre></div>
+                                    </div>
+                                    <div class="g-col-3-12" style="padding-left: 40px;">
+                                        Install Gemstone with NPM, create a fresh
+                                        project directory and then create the initial
+                                        Gemstone project configuration. Finally, edit
+                                        the Gemstone project configuration accordingly.
+                                    </div>
+                                </div>
+
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-10-12">
+                                       <br/>
+                                       <b>Step 2: Scaffold Build Environment</b>
+                                    </div>
+                                </div>
+                                <p/>
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-6-12">
+<div class="sample"><pre class="highlight language-bash">
+$ yo gemstone:env --app-name="Example"
+</pre></div>
+                                    </div>
+                                    <div class="g-col-3-12" style="padding-left: 40px;">
+                                        Now, scaffold the build environment according
+                                        to the previously setup project configuraton.
+                                    </div>
+                                 </div>
+
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-10-12">
+                                       <br/>
+                                       <b>Step 3: Add Composites and Widgets</b>
+                                    </div>
+                                </div>
+                                <p/>
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-6-12">
+<div class="sample"><pre class="highlight language-bash">
+$ yo gemstone:widget "Login"
+$ yo gemstone:composite "Panel"
+</pre></div>
+                                    </div>
+                                    <div class="g-col-3-12" style="padding-left: 40px;">
+                                        Add ComponentJS MVC/CT-based widgets and composites.
+                                    </div>
+                                </div>
+
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-10-12">
+                                       <br/>
+                                       <b>Step 4: Build Application</b>
+                                    </div>
+                                </div>
+                                <p/>
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-6-12">
+<div class="sample"><pre class="highlight language-bash">
+$ npm install
+$ grunt
+</pre></div>
+                                    </div>
+                                    <div class="g-col-3-12" style="padding-left: 40px;">
+                                        Locally install the Grunt build tool
+                                        dependencies and run it,
+                                        which in turn will run the Bower package manager
+                                        and install all third-party libraries. Finally,
+                                        the initial application will be built.
+                                    </div>
+                                </div>
+
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-10-12">
+                                       <br/>
+                                       <b>Step 5: Run Application</b>
+                                    </div>
+                                </div>
+                                <p/>
+                                <div class="g-row">
+                                    <div class="g-off-1-12 g-col-6-12">
+<div class="sample"><pre class="highlight language-bash">
+$ grunt server
+</pre></div>
+                                    </div>
+                                    <div class="g-col-3-12" style="padding-left: 40px;">
+                                        Run the application via http://localhost:8080/
+                                    </div>
+                                </div>
+
+                            </div>
+
+<!--
+                            <div class="swiper-slide slide2" data-hash="example-select">
+
+                            </div>
+
+                            <div class="swiper-slide slide3" data-hash="example-params">
+-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons">
+                    <i class="fa fa-arrow-circle-left"></i>
+                    <i class="fa fa-arrow-circle-right"></i>
+                </div>
+                <div class="pagination">
+                </div>
+                <div class="scrollbar">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+           Copyright &copy; 2014 <a href="http://engelschall.com/">Ralf S. Engelschall</a><br/>
+           Distributed as Open Source Software under <a href="http://mozilla.org/MPL/2.0">MPL/2.0</a> license.
+        </div>
+    </body>
+</html>
